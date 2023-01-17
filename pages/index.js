@@ -25,6 +25,7 @@ export default function Home() {
               src={scene}
               width="1600"
               loading="eager"
+              fetchpriority="high"
               height="1067"
               style={{
                 objectFit: "cover",
