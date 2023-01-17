@@ -24,6 +24,7 @@ export default function Home() {
               alt="scene"
               src={scene}
               width="1600"
+              loading="eager"
               height="1067"
               style={{
                 objectFit: "cover",
