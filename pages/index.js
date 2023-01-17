@@ -18,7 +18,18 @@ export default function Home() {
       <section className="hero">
         <div className="frontpage_bg">
           <div className="frontpage_picture">
-            <Image alt="scene" src={img} width="1600" height="1067" />
+            <Image
+              sizes="50vw"
+              alt="scene"
+              src={img}
+              width="1600"
+              height="1067"
+              style={{
+                objectFit: "cover",
+                backgroundPosition: "center",
+              }}
+              placeholder="blur"
+            />
           </div>
         </div>
         <div className="date_wrapper">
