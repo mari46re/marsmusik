@@ -14,10 +14,7 @@
 @use "./Artist.module.scss";
 @use "./ThankYouSite.module.scss";
 @use "./Ticker.module.scss";
-
-$darkred-color: #510926;
-$orange-color: rgb(251, 135, 49);
-$light-color: rgba(254, 240, 224);
+@use "colors" as *;
 
 * {
   padding: 0;
@@ -55,7 +52,6 @@ button {
   padding: 0.7rem;
   color: $darkred-color;
   background-color: transparent;
-  // max-width: fit-content;
 }
 
 button:hover,
@@ -71,7 +67,7 @@ input::placeholder {
   align-self: center;
   width: 150px;
   background-color: $darkred-color;
-  color: #fae3cc;
+  color: $light-color;
   &:hover {
     transform: scale(1.05);
   }

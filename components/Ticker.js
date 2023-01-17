@@ -57,9 +57,11 @@ function Ticker({ futureDate }) {
   //Hvis tiden er gået, skal dette fremgå på sitet.
   //Ellers skal nedtælleren vises!
   const tickerContents = isTimeUp ? (
-    <div>Time is up!</div>
+    <section>
+      <p>Time is up!</p>
+    </section>
   ) : (
-    <div className="ticker">
+    <section className="ticker">
       <TickerCell value={years} label="Y" />
       <p>:</p>
       <TickerCell value={days} label="D" />
@@ -69,10 +71,10 @@ function Ticker({ futureDate }) {
       <TickerCell value={minutes} label="M" />
       <p>:</p>
       <TickerCell value={seconds} label="S" />
-    </div>
+    </section>
   );
 
-  return <div>{tickerContents}</div>;
+  return <>{tickerContents}</>;
 }
 
 export default Ticker;

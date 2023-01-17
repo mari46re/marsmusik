@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 .schedule {
   position: relative;
   display: grid;
@@ -42,12 +44,8 @@
   }
 
   .schedule_container {
-    background: rgb(65, 255, 255);
-    background: linear-gradient(
-      148deg,
-      rgba(65, 255, 255, 1) 0%,
-      rgba(255, 253, 65, 1) 100%
-    );
+    background: $neon-blue;
+    background: linear-gradient(148deg, $neon-blue 0%, $neon-yellow 100%);
     grid-column: 2 / 3;
     padding: 1rem;
     padding-top: 95px;
@@ -76,14 +74,14 @@
       width: 100%;
       background-color: rgba(255, 255, 255, 0.353);
       &:hover {
-        background: -webkit-linear-gradient(#41ffff, #fffd41);
+        background: -webkit-linear-gradient($neon-blue, $neon-yellow);
       }
 
       &:focus {
         font-style: italic;
         border: 3px solid;
         border-radius: 5px;
-        border-image: linear-gradient(to right, #41ffff, #fffd41) 1;
+        border-image: linear-gradient(to right, $neon-blue, $neon-yellow) 1;
       }
     }
   }

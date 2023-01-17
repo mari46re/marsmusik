@@ -2,7 +2,8 @@ import Head from "next/head";
 import Anchor from "../components/Anchor";
 import localFont from "@next/font/local";
 import { Shrikhand } from "@next/font/google";
-import { useEffect } from "react";
+import Image from "next/image";
+import img from "../public/scene.webp";
 
 const xanhMonoReg = localFont({ src: "./xanhmono-regular-webfont.woff2" });
 const xanhMonoItal = localFont({ src: "./xanhmono-italic-webfont.woff2" });
@@ -16,7 +17,9 @@ export default function Home() {
       </Head>{" "}
       <section className="hero">
         <div className="frontpage_bg">
-          <div className="frontpage_picture"></div>
+          <div className="frontpage_picture">
+            <Image alt="scene" src={img} width="1600" height="1067" />
+          </div>
         </div>
         <div className="date_wrapper">
           <div className="date">

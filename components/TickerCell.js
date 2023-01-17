@@ -12,7 +12,10 @@ function TickerCell(props) {
 
   return (
     <div>
-      <p className="label" style={{ fontFamily: `${shrikhand.style.fontFamily}` }}>
+      <p
+        className="label"
+        style={{ fontFamily: `${shrikhand.style.fontFamily}` }}
+      >
         {props.label}
       </p>
       <p
@@ -20,6 +23,7 @@ function TickerCell(props) {
         style={{
           fontFamily: `${xanhMonoReg.style.fontFamily}`,
         }}
+        suppressHydrationWarning
       >
         {props.value}
       </p>
