@@ -3,7 +3,8 @@ import Anchor from "../components/Anchor";
 import localFont from "@next/font/local";
 import { Shrikhand } from "@next/font/google";
 import Image from "next/image";
-import img from "../public/scene.webp";
+import scene from "../public/scene.webp";
+import pil from "../public/pil.svg";
 
 const xanhMonoReg = localFont({ src: "./xanhmono-regular-webfont.woff2" });
 const xanhMonoItal = localFont({ src: "./xanhmono-italic-webfont.woff2" });
@@ -21,7 +22,7 @@ export default function Home() {
             <Image
               sizes="50vw"
               alt="scene"
-              src={img}
+              src={scene}
               width="1600"
               height="1067"
               style={{
@@ -85,7 +86,7 @@ export default function Home() {
             <Image
               style={{ width: "70px", zIndex: "100000" }}
               className="pil"
-              src="/pil.svg"
+              src={pil}
               width="60"
               height="35"
               alt="pil"
